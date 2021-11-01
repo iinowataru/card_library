@@ -1,0 +1,18 @@
+ <h2>カード一覧</h2>
+ <table class='table table-hover table-inverse'>
+  <thead>
+    <tr>
+    <th>画像</th>
+    <th>カード名</th>
+    <th>詳細ページ</th>
+    </tr>
+  </thead>
+
+ <% @infomation.each do |infomation| %>
+  <tbody>
+    <tr>
+    <td><%= attachment_image_tag infomation, :image, :fill, 100, 100, format: 'jpeg' %></td>
+    <td><%= infomation. title %></td>
+    <td><%= link_to "詳細", infomation_path(infomation), class:'btn btn-primary' %></td>
+    </tr>
+  </tbody>

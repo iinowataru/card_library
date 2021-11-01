@@ -1,0 +1,34 @@
+ <h2>カード詳細</h2>
+ <tbody>
+ <tr>
+  <th><%= attachment_image_tag @infomation, :fill, 100, 100, format: 'jpeg' %> </th>
+ </tr>
+ <tr>
+  <th>コスト</th>
+  <th><%= @infomation.cost %></th>
+ </tr>
+ <tr>
+  <th>攻撃力</th>
+  <th><%= @infomation.attack %></th>
+ </tr>
+ <tr>
+  <th>体力</th>
+  <th><%= @infomation.health %></th>
+ </tr>
+ <tr>
+  <th>効果</th>
+  <th><%= @infomation.body %></th>
+ </tr>
+ <tr>
+  <th>進化後攻撃力</th>
+  <th><%= @infomation.e_attack %></th>
+ </tr>
+ <tr>
+  <th>進化後体力</th>
+  <th><%= @infomation.e_health %></th>
+ </tr>
+ <tr>
+  <th>進化後効果</th>
+  <th><%= @infomation.e_body %></th>
+ </tr>
+ </tbody>
