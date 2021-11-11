@@ -1,0 +1,11 @@
+ <% if user_signd_in? %>
+  <li class="text-white">ようこそ！<%= current_user.name %>さん</li>
+  <li><%= link_to "カード一覧", infomations_path %></li>
+  <li><%= link_to "カード新規登録", new_infomation_path %></li>
+  <li><%= link_to "会員情報編集", edit_user_registration_path %></li>
+  <li><%= link_to "ログアウト", destroy_user_session_path %></li>
+ <% else %>
+  <li class="text-white">ようこそ！</li>
+  <li><%= link_to "新規会員登録", new_user_registration_path %></li>
+  <li><%= link_to "ログイン", new_user_session_path %></li>
+ <% end %>
