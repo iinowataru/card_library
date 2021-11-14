@@ -1,4 +1,5 @@
 class InfomationsController < ApplicationController
+  before_action :authenticate_user!
 
   def new
     @infomation = Infomation.new

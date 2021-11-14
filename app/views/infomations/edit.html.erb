@@ -1,3 +1,4 @@
+<%= render 'layouts/header' %>
  <h2>情報編集</h2>
  <%= form_with model: @infomation, local true do |f| %>
   <h4>画像</h4>
@@ -20,3 +21,4 @@
   <%= f.text_area :e_body %>
   <%= f.submit '変更を保存する' %>
  <% end %>
+ <%= render 'layouts/footer' %>
